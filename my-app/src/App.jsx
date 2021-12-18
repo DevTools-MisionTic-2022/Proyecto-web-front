@@ -1,20 +1,18 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import PrivateLayout from 'layouts/PrivateLayout';
+import PrivateLayout from './layouts/PrivateLayout';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { UserContext } from 'context/userContext';
-import Index from 'pages/Index';
-import Usuarios from 'pages/usuarios/index';
-import IndexCategory1 from 'pages/category1/Index';
-import Category1 from 'pages/category1/CategoryPage1';
+import { UserContext } from './context/userContext';
+import Index from './pages/Index';
+import Usuarios from './pages/usuarios/index';
 import { ApolloProvider, createHttpLink, ApolloClient, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import EditarUsuario from 'pages/usuarios/editar';
-import 'styles/globals.css';
-import 'styles/tabla.css';
-import AuthLayout from 'layouts/AuthLayout';
-import Register from 'pages/auth/register';
-import Login from 'pages/auth/login';
-import { AuthContext } from 'context/authContext';
+import EditarUsuario from './pages/usuarios/editar';
+import './styles/globals.css';
+import './styles/tabla.css';
+import AuthLayout from './layouts/AuthLayout';
+import Register from './pages/auth/register';
+import Login from './pages/auth/login';
+import { AuthContext } from './context/authContext';
 
 // import PrivateRoute from 'components/PrivateRoute';
 

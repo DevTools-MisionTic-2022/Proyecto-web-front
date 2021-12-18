@@ -1,11 +1,11 @@
 import React, { useEffect, useCallback } from 'react';
-import Sidebar from 'components/Sidebar';
+import Sidebar from '../components/Sidebar';
 import { Outlet } from 'react-router';
 import { ToastContainer } from 'react-toastify';
-import { useAuth } from 'context/authContext';
+import { useAuth } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import { VALIDATE_TOKEN } from 'graphql/auth/mutation';
+import { VALIDATE_TOKEN } from '../graphql/auth/mutation';
 import 'react-toastify/dist/ReactToastify.css';
 
 const PrivateLayout = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ButtonLoading from 'components/ButtonLoading';
+import ButtonLoading from 'components/';
 import Input from 'components/Input';
 import { LOGIN } from 'graphql/auth/mutation';
 import useFormData from 'hooks/useFormData';
