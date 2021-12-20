@@ -2,11 +2,13 @@ import React from 'react';
 
 const Index = () => {
   return (
-    <div>
-      <div className='bg-green-300 h-96'>Index page</div>
-      <div className='bg-green-300 h-96'>Index page</div>
-      <div className='bg-green-300 h-96'>Index page</div>
-      <div className='bg-green-300 h-96'>Index page</div>
+    <div className='content-center'>
+      <div className='bg-blue-100 h-96'>
+        <h2 className='text-center text-indigo-800 font-medium text-xl'>Gestion de proyectos</h2>
+      </div>
+      <div className='bg-blue-100 h-96'></div>
+      <div className='bg-blue-100 h-96'></div>
+      <div className='bg-blue-100 h-96'></div>
     </div>
   );
 };

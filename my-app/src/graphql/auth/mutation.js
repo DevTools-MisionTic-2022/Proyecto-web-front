@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
-const CREAR_USUARIO = gql`
-  mutation registro(
+const REGISTRO = gql`
+  mutation Registro(
     $nombre: String!
     $apellido: String!
     $identificacion: String!
@@ -19,29 +19,26 @@ const CREAR_USUARIO = gql`
     ) {
       token
       error
-      authorized
     }
   }
 `;
 
 const LOGIN = gql`
-  mutation Mutation($correo: String!, $password: String!) {
+  mutation Login($correo: String!, $password: String!) {
     login(correo: $correo, password: $password) {
       token
       error
-      authorized
     }
   }
 `;
 
-const VALIDATE_TOKEN = gql`
-  mutation Mutation {
-    validateToken {
+const REFRESH_TOKEN = gql`
+  mutation RefreshToken {
+    refreshToken {
       token
       error
-      authorized
     }
   }
 `;
 
-export { CREAR_USUARIO, LOGIN, VALIDATE_TOKEN };
+export { REGISTRO, LOGIN, REFRESH_TOKEN };
