@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import Input from '../../components/Input';
-import { GET_USUARIOS } from '../../graphql/usuarios/queries';
+import { GET_USUARIOS } from '../../graphql/usuario/queries';
 import { Link } from 'react-router-dom';
-import DropDown from '../../components/Dropdown';
+import DropDown from '../../components/DropDown';
 import ButtonLoading from '../../components/ButtonLoading';
 import useFormData from '../../hooks/useFormData';
 import { Enum_TipoObjetivo } from '../../utils/enums';

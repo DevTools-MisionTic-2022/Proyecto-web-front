@@ -9,7 +9,7 @@ import {
   AccordionStyled,
   AccordionSummaryStyled,
   AccordionDetailsStyled,
-} from 'components/Accordion';
+} from '../../components/Accordion';
 
 const IndexInscripciones = () => {
   // falta capturar error de query

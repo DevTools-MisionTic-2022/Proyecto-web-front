@@ -4,7 +4,7 @@ import ButtonLoading from '../../components/ButtonLoading';
 import { Link, useNavigate } from 'react-router-dom';
 import useFormData from '../../hooks/useFormData';
 import { useMutation } from '@apollo/client';
-import { LOGIN } from '../../graphql/auth/mutations';
+import { LOGIN } from '../../graphql/auth/mutation';
 import { useAuth } from '../../context/authContext';
 
 const Login = () => {

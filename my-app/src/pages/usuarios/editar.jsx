@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_USUARIO } from '../../graphql/usuarios/queries';
+import { GET_USUARIO } from '../../graphql/usuario/queries';
 import Input from '../../components/Input';
 import ButtonLoading from '../../components/ButtonLoading';
 import useFormData from '../../hooks/useFormData';
 import { toast } from 'react-toastify';
-import { EDITAR_USUARIO } from '../../graphql/usuarios/mutations';
-import DropDown from '../../components/Dropdown';
+import { EDITAR_USUARIO } from '../../graphql/usuario/mutations';
+import DropDown from '../../components/DropDown';
 import { Enum_EstadoUsuario } from '../../utils/enums';
 
 const EditarUsuario = () => {
